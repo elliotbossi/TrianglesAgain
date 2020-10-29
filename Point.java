@@ -18,4 +18,8 @@ public class Point {
   public double getY(){
     return y;
   }
+
+  public double distanceTo(Point other) {
+      return (Math.sqrt((((getX())-(other.getX()))*((getX())-(other.getX()))) + (((getY())-(other.getY()))*((getY())-(other.getY())))));
+  }
 }
