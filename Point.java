@@ -19,7 +19,11 @@ public class Point {
     return y;
   }
 
-  public double distanceTo(Point other) {
+  public double distanceTo(Point other){
       return (Math.sqrt((((getX())-(other.getX()))*((getX())-(other.getX()))) + (((getY())-(other.getY()))*((getY())-(other.getY())))));
+  }
+
+  public boolean equals(Point other){
+    return (((getX()) == (other.getX())) && ((getY()) == (other.getY())));
   }
 }
