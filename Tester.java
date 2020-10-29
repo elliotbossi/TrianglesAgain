@@ -1,18 +1,13 @@
 public class Tester{
   public static void main(String[]args){
-    BankAccount b1 = new BankAccount(100,"password");
-    BankAccount b2 = new BankAccount(100,"password");
-    System.out.println(b1.toString());
-    System.out.println(b1.getAccountID());
-    System.out.println(b1.getBalance());
-    System.out.println(b1.deposit(10));
-    System.out.println(b2.deposit(10));
-    System.out.println(b1.getBalance());
-    System.out.println(b1.withdraw(4));
-    System.out.println(b1.getBalance());
-    System.out.println(b1.transferTo(b2, 3, "password"));
-    System.out.println(b1.getBalance());
-    System.out.println(b2.getBalance());
+    Point p1 = new Point(0,0);
+    Point p2 = new Point(0,4);
+    Point p3 = new Point(3,0);
+    Triangle t = new Triangle(p1,p2,p3);
+
+    System.out.println(p1.distanceTo(p2));
+    System.out.println(t.getPerimeter());
+    System.out.println(t.getArea());
 
   }
 
